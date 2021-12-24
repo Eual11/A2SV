@@ -19,14 +19,14 @@ def gradingStudents(grades):
         if grades[i] < 38:
             continue
         else:
-            temp = grades[i]
-            te = temp % 5
-            if te == 3:
-                temp = temp + 2
-                grades[i] = temp
-            elif te == 4:
-                temp = temp + 1
-                grades[i] = temp
+            abst = grades[i]
+            ab = abst % 5
+            if ab == 3:
+                abst = abst + 2
+                grades[i] = abst
+            elif ab == 4:
+                abst = abst + 1
+                grades[i] = abst
             else:
                 continue
     return grades
